@@ -1,0 +1,115 @@
+.hero {
+  padding: 118px 0;
+  margin: 0 auto;
+
+  max-width: 576px;
+  height: 100%;
+  text-align: center;
+
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero/hero-480.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #c4c4c4;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-480@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 960px;
+
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-768.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-768@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: #c4c4c4;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 200px 0;
+    max-width: 1600px;
+
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero/hero-1600.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #c4c4c4;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/hero-1600@2x.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: #c4c4c4;
+    }
+  }
+}
+
+.hero__title {
+  margin: 0 auto;
+  margin-bottom: $indent;
+  max-width: 360px;
+  width: 100%;
+
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $primary-bgc;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__btn {
+  @extend %btn;
+  padding: 10px 24px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  color: $primary-bgc;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color $transition-duration $timing-function;
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 32px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $btn-primary-bgc;
+  }
+}

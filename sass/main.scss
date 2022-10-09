@@ -1,0 +1,21 @@
+// normalize
+@import 'base/normalize';
+
+//Utilits
+@import 'utilits/vars';
+@import 'utilits/common';
+@import 'utilits/placeholders.scss';
+
+// reset
+@import 'base/reset';
+
+// Components
+@import 'components/header';
+@import 'components/hero';
+@import 'components/our-features';
+@import 'components/our-work';
+@import 'components/our-team';
+@import 'components/our-clients';
+@import 'components/footer';
+@import 'components/portfolio';
+@import 'components/backdrop';

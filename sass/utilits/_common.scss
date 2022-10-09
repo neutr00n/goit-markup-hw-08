@@ -1,0 +1,37 @@
+body {
+  font-family: $primary-font;
+  letter-spacing: 0.03em;
+
+  color: $primary-text-color;
+  background-color: $primary-bgc;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.title {
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+
+  color: $primary-title-color;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
