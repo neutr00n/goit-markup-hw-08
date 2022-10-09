@@ -1,8 +1,8 @@
 .our-work {
-  @media screen and (max-width: 1199.99px) {
+  padding: 47px 0 94px 0;
+  @include breakpoint(tablet-max) {
     display: none;
   }
-  padding: 47px 0 94px 0;
 }
 
 .our-work__title {

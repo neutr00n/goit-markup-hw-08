@@ -1,5 +1,5 @@
 .header {
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     padding: 10px 0;
   }
 
@@ -23,7 +23,7 @@
   @extend %menu-btn;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) {
+  @include breakpoint(tablet) {
     display: none;
   }
 
@@ -33,7 +33,7 @@
     top: 10px;
     right: 15px;
 
-    @media screen and (min-width: 768px) {
+    @include breakpoint(tablet) {
       display: none;
     }
   }
@@ -51,7 +51,7 @@
 .mobile-menu {
   width: 100%;
 
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     padding: 48px 40px;
 
     position: fixed;
@@ -70,12 +70,12 @@
     transition: transform $transition-duration $timing-function,
       visibility $transition-duration $timing-function;
   }
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     display: flex;
     margin-left: 87px;
     align-items: center;
   }
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-left: 92px;
   }
 }
@@ -86,20 +86,20 @@
   visibility: visible;
 }
 
-@media screen and (max-width: 767.99px) {
+@include breakpoint(mobile-max) {
   .site-nav {
     margin-bottom: 302px;
   }
 }
 
-@media screen and (min-width: $tablet) {
+@include breakpoint(tablet) {
   .nav {
     display: flex;
     gap: 50px;
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@include breakpoint(mobile-max) {
   .nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -120,7 +120,7 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     display: block;
 
     padding: 32px 0;
@@ -134,7 +134,7 @@
   position: relative;
   color: $accent-color;
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     &::after {
       position: absolute;
       content: '';
@@ -152,17 +152,17 @@
 }
 
 .contact {
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     margin-left: auto;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     display: flex;
   }
 }
@@ -174,10 +174,10 @@
 }
 
 .contact__item:nth-child(2) {
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     margin-bottom: 32px;
   }
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-left: 30px;
   }
 }
@@ -188,7 +188,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
 
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     &--size {
       font-size: 24px;
       line-height: 1.17;
@@ -196,7 +196,7 @@
     }
   }
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     display: flex;
     align-items: center;
     font-weight: 500;
@@ -205,7 +205,9 @@
     letter-spacing: 0.02em;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
+    padding: 32px 0;
+
     font-size: 14px;
     line-height: 1.14;
   }
@@ -229,16 +231,16 @@
 .contact__icon {
   margin-right: 10px;
 
-  @media screen and (max-width: 1199.99px) {
+  @include breakpoint(tablet-max) {
     display: none;
   }
 }
 
 .header-social {
-  display: flex;
+  display: none;
 
-  @media screen and (min-width: 767.99px) {
-    display: none;
+  @include breakpoint(mobile-max) {
+    display: flex;
   }
 }
 

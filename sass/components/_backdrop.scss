@@ -43,17 +43,14 @@
     transform: translate(-50%, -50%) scale(1.2);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     width: 528px;
     height: 581px;
   }
 }
 
 .modal__close-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+  @include center-Flex;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -88,7 +85,7 @@
 
   color: $primary-title-color;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     line-height: 1.15;
   }
 }
@@ -105,7 +102,7 @@
     align-items: center;
     margin-bottom: 30px;
 
-    @media screen and (min-width: $desktop) {
+    @include breakpoint(desktop) {
       padding-left: 12px;
     }
   }
@@ -180,7 +177,7 @@
 
     color: rgba(117, 117, 117, 0.5);
 
-    @media screen and (min-width: $desktop) {
+    @include breakpoint(desktop) {
       font-size: 12px;
       line-height: 1.17;
     }
@@ -239,7 +236,7 @@
   font-size: 12px;
   line-height: 1.17;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     font-size: 14px;
     line-height: 1.71;
   }

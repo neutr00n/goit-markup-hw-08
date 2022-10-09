@@ -1,7 +1,7 @@
 .our-clients {
   padding: 60px 0;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     padding: 94px 0;
   }
 }
@@ -9,7 +9,7 @@
 .our-clients__title {
   margin-bottom: 30px;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-bottom: 50px;
   }
 }
@@ -25,12 +25,12 @@
   $items: 2;
   flex-basis: calc((100% - $indent * ($items - 1)) / $items);
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     $items: 3;
     flex-basis: calc((100% - $indent * ($items - 1)) / $items);
   }
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     $items: 6;
     flex-basis: calc((100% - $indent * ($items - 1)) / $items);
   }

@@ -1,0 +1,37 @@
+@mixin breakpoint($point) {
+  @if $point==mobile {
+    @media screen and (min-width: $mobile) {
+      @content;
+    }
+  }
+
+  @if $point==tablet {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $point==desktop {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+
+  @if $point==mobile-max {
+    @media screen and (max-width: 767.99px) {
+      @content;
+    }
+  }
+
+  @if $point==tablet-max {
+    @media screen and (max-width: 1199.99px) {
+      @content;
+    }
+  }
+}
+
+@mixin center-Flex($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

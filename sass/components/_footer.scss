@@ -3,11 +3,11 @@
   background-color: $footer-bgc;
 
   .container {
-    @media screen and (max-width: 1199.99px) {
+    @include breakpoint(tablet-max) {
       text-align: center;
     }
 
-    @media screen and (min-width: $tablet) {
+    @include breakpoint(tablet) {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -17,7 +17,7 @@
 }
 
 .footer__wrapper:nth-child(1) {
-  @media screen and (max-width: 1199.99px) {
+  @include breakpoint(tablet-max) {
     margin-bottom: 60px;
     min-width: 232px;
   }
@@ -39,7 +39,7 @@
 .footer-contact__item:not(:last-child) {
   margin-bottom: 8px;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-bottom: 9px;
   }
 }
@@ -64,15 +64,15 @@
 }
 
 .footer__wrapper:nth-child(2) {
-  @media screen and (max-width: 767.99px) {
+  @include breakpoint(mobile-max) {
     margin-bottom: 60px;
   }
 
-  @media screen and (min-width: $tablet) {
+  @include breakpoint(tablet) {
     margin-left: 165px;
   }
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-left: 70px;
   }
 }
@@ -96,9 +96,7 @@
 }
 
 .footer-socials__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center-Flex;
 
   width: 44px;
   height: 44px;
@@ -118,7 +116,7 @@
   fill: $primary-bgc;
 }
 
-@media screen and (min-width: $desktop) {
+@include breakpoint(desktop) {
   .footer__wrapper:nth-child(3) {
     margin-left: auto;
   }
@@ -135,7 +133,7 @@
   color: $primary-bgc;
 }
 
-@media screen and (min-width: $desktop) {
+@include breakpoint(desktop) {
   .send-form {
     display: flex;
   }
@@ -159,14 +157,14 @@
 
   transition: border-color $transition-duration $timing-function;
 
-  @media screen and (max-width: 1199.99px) {
+  @include breakpoint(tablet-max) {
     margin-bottom: 20px;
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
     min-width: 450px;
   }
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     min-width: 358px;
   }
 
@@ -200,7 +198,7 @@
 
   transition: background-color $transition-duration $timing-function;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-left: 12px;
     padding: 10px 28px 10px 28px;
   }
@@ -214,7 +212,7 @@
 .send-form__icon {
   margin-left: 12px;
 
-  @media screen and (min-width: $desktop) {
+  @include breakpoint(desktop) {
     margin-left: 10px;
   }
 }

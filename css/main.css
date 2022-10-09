@@ -558,6 +558,7 @@ svg {
 }
 @media screen and (min-width: 1200px) {
   .contact__link {
+    padding: 32px 0;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -586,11 +587,11 @@ svg {
 }
 
 .header-social {
-  display: flex;
+  display: none;
 }
-@media screen and (min-width: 767.99px) {
+@media screen and (max-width: 767.99px) {
   .header-social {
-    display: none;
+    display: flex;
   }
 }
 
@@ -1134,7 +1135,7 @@ svg {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .send-form__input {
     min-width: 450px;
   }
