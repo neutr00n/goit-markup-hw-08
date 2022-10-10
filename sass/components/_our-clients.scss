@@ -4,63 +4,61 @@
   @include breakpoint(desktop) {
     padding: 94px 0;
   }
-}
 
-.our-clients__title {
-  margin-bottom: 30px;
+  &__title {
+    margin-bottom: 30px;
 
-  @include breakpoint(desktop) {
-    margin-bottom: 50px;
+    @include breakpoint(desktop) {
+      margin-bottom: 50px;
+    }
   }
-}
 
-.clients {
-  display: flex;
-  flex-wrap: wrap;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
 
-  gap: $indent;
-}
+    gap: $indent;
+  }
 
-.clients__item {
-  $items: 2;
-  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-
-  @include breakpoint(tablet) {
-    $items: 3;
+  &__item {
+    $items: 2;
     flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+
+    @include breakpoint(tablet) {
+      $items: 3;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
+
+    @include breakpoint(desktop) {
+      $items: 6;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
   }
 
-  @include breakpoint(desktop) {
-    $items: 6;
-    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+  &__link {
+    @include flex(flex, center, center);
+
+    height: 92px;
+
+    border: 1px solid getColor('social-icon-color');
+    border-radius: 4px;
+
+    transition: border-color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      border-color: getColor('accent-color');
+    }
   }
-}
 
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  &__icon {
+    fill: getColor('social-icon-color');
 
-  height: 92px;
+    transition: fill $transition-duration $timing-function;
 
-  border: 1px solid $social-icon-color;
-  border-radius: 4px;
-
-  transition: border-color $transition-duration $timing-function;
-
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-  }
-}
-
-.clients__icon {
-  fill: $social-icon-color;
-
-  transition: fill $transition-duration $timing-function;
-
-  .clients__link:hover &,
-  .clients__link:focus & {
-    fill: $accent-color;
+    .our-clients__link:hover &,
+    .our-clients__link:focus & {
+      fill: getColor('accent-color');
+    }
   }
 }

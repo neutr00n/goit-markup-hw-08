@@ -5,7 +5,7 @@
 
   width: 100%;
   height: 100%;
-  background-color: $backdrop-bgc;
+  background-color: getColor('backdrop-bgc');
 
   opacity: 1;
   visibility: visible;
@@ -31,7 +31,7 @@
   width: 450px;
   height: 609px;
 
-  background-color: $primary-bgc;
+  background-color: getColor('primary-bgc');
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -39,233 +39,236 @@
 
   transition: transform $transition-duration $timing-function;
 
-  .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-
   @include breakpoint(desktop) {
     width: 528px;
     height: 581px;
   }
-}
 
-.modal__close-btn {
-  @include center-Flex;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  width: 30px;
-  height: 30px;
-
-  background-color: $primary-bgc;
-
-  border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.modal__icon {
-  transition: fill $transition-duration $timing-function;
-
-  .modal__close-btn:hover &,
-  .modal__close-btn:focus & {
-    fill: $accent-color;
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
   }
-}
 
-.modal__titel {
-  display: block;
+  &__close-btn {
+    @include flex(flex, center, center);
+    position: absolute;
+    top: 8px;
+    right: 8px;
 
-  margin-bottom: 12px;
+    width: 30px;
+    height: 30px;
 
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
+    background-color: getColor('primary-bgc');
 
-  color: $primary-title-color;
-
-  @include breakpoint(desktop) {
-    line-height: 1.15;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
   }
-}
 
-.form__field {
-  display: block;
-  margin-bottom: 10px;
+  &__icon {
+    transition: fill $transition-duration $timing-function;
 
-  &:nth-child(4) {
-    margin-bottom: 20px;
-  }
-  &:nth-child(5) {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-
-    @include breakpoint(desktop) {
-      padding-left: 12px;
+    .modal__close-btn:hover &,
+    .modal__close-btn:focus & {
+      fill: getColor('accent-color');
     }
   }
-}
 
-.form__label {
-  display: block;
-  margin-bottom: 4px;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-}
-
-.form__thumb {
-  position: relative;
-}
-
-.form__input {
-  padding: 12px 12px 12px 42px;
-
-  width: 100%;
-  height: 40px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-
-  transition: border-color $transition-duration $timing-function;
-
-  &:focus {
-    border-color: $accent-color;
-  }
-}
-
-.form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-
-  fill: $primary-title-color;
-
-  transition: fill $transition-duration $timing-function;
-
-  .form__input:focus + & {
-    fill: $accent-color;
-  }
-}
-
-.form__comment {
-  padding: 12px 16px;
-
-  width: 100%;
-  height: 120px;
-
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  resize: none;
-  outline: none;
-
-  transition: border-color $transition-duration $timing-function;
-
-  &:focus {
-    border-color: $accent-color;
-  }
-
-  &::placeholder {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-
-    color: rgba(117, 117, 117, 0.5);
-
-    @include breakpoint(desktop) {
-      font-size: 12px;
-      line-height: 1.17;
-    }
-  }
-}
-
-.form__checkbox {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-.form__dissabled-icon {
-  position: relative;
-
-  margin-right: 8px;
-
-  width: 16px;
-  height: 15px;
-
-  border: 2px solid $primary-title-color;
-  border-radius: 2px;
-
-  transition: background-color $transition-duration $timing-function,
-    border-color $transition-duration $timing-function;
-
-  .form__checkbox:focus + & {
-    border-color: $accent-color;
-  }
-  .form__checkbox:checked + & {
-    border-color: $accent-color;
-    background-color: $accent-color;
-  }
-}
-
-.form__activ-icon {
-  display: none;
-
-  position: absolute;
-  top: -2px;
-  left: -2px;
-
-  .form__checkbox:checked + .form__dissabled-icon & {
+  &__titel {
     display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+
+    color: getColor('primary-title-color');
+
+    @include breakpoint(desktop) {
+      line-height: 1.15;
+    }
   }
 }
 
-.form__agreement {
-  font-size: 12px;
-  line-height: 1.17;
+.form {
+  &__field {
+    display: block;
+    margin-bottom: 10px;
 
-  @include breakpoint(desktop) {
-    font-size: 14px;
-    line-height: 1.71;
+    &:nth-child(4) {
+      margin-bottom: 20px;
+    }
+    &:nth-child(5) {
+      @include flex(flex, flex-start, center);
+
+      margin-bottom: 30px;
+
+      @include breakpoint(desktop) {
+        padding-left: 12px;
+      }
+    }
   }
-}
 
-.form__link {
-  color: $accent-color;
+  &__label {
+    display: block;
+    margin-bottom: 4px;
 
-  text-decoration-line: underline;
-}
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
 
-.form__btn {
-  @extend %btn;
-  display: flex;
-  margin: 0 auto;
-  padding: 10px 52px;
+  &__thumb {
+    position: relative;
+  }
 
-  font-weight: 700;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  &__input {
+    padding: 12px 12px 12px 42px;
 
-  color: $primary-bgc;
-  background-color: $accent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 40px;
 
-  transition: background-color $transition-duration $timing-function;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
 
-  &:hover,
-  &:focus {
-    background-color: $btn-primary-bgc;
+    transition: border-color $transition-duration $timing-function;
+
+    &:focus {
+      border-color: getColor('accent-color');
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    fill: getColor('primary-title-color');
+
+    transition: fill $transition-duration $timing-function;
+
+    .form__input:focus + & {
+      fill: getColor('accent-color');
+    }
+  }
+
+  &__comment {
+    padding: 12px 16px;
+
+    width: 100%;
+    height: 120px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+
+    transition: border-color $transition-duration $timing-function;
+
+    &:focus {
+      border-color: getColor('accent-color');
+    }
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+
+      @include breakpoint(desktop) {
+        font-size: 12px;
+        line-height: 1.17;
+      }
+    }
+  }
+
+  &__checkbox {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  &__dissabled-icon {
+    position: relative;
+
+    margin-right: 8px;
+
+    width: 16px;
+    height: 15px;
+
+    border: 2px solid getColor('primary-title-color');
+    border-radius: 2px;
+
+    transition: background-color $transition-duration $timing-function,
+      border-color $transition-duration $timing-function;
+
+    .form__checkbox:focus + & {
+      border-color: getColor('accent-color');
+    }
+    .form__checkbox:checked + & {
+      border-color: getColor('accent-color');
+      background-color: getColor('accent-color');
+    }
+  }
+
+  &__activ-icon {
+    display: none;
+
+    position: absolute;
+    top: -2px;
+    left: -2px;
+
+    .form__checkbox:checked + .form__dissabled-icon & {
+      display: block;
+    }
+  }
+
+  &__agreement {
+    font-size: 12px;
+    line-height: 1.17;
+
+    @include breakpoint(desktop) {
+      font-size: 14px;
+      line-height: 1.71;
+    }
+  }
+
+  &__link {
+    color: getColor('accent-color');
+
+    text-decoration-line: underline;
+  }
+
+  &__btn {
+    @extend %btn;
+    display: flex;
+    margin: 0 auto;
+    padding: 10px 52px;
+
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    color: getColor('primary-bgc');
+    background-color: getColor('accent-color');
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: getColor('btn-primary-bgc');
+    }
   }
 }

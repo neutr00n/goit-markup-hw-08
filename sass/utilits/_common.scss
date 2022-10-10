@@ -2,8 +2,8 @@ body {
   font-family: $primary-font;
   letter-spacing: 0.03em;
 
-  color: $primary-text-color;
-  background-color: $primary-bgc;
+  color: getColor('primary-text-color');
+  background-color: getColor('primary-bgc');
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
   line-height: 1.18;
   text-align: center;
 
-  color: $primary-title-color;
+  color: getColor('primary-text-color');
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;

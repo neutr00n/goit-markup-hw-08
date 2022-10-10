@@ -10,162 +10,164 @@
   margin-bottom: 40px;
 
   @include breakpoint(tablet) {
-    display: flex;
+    @include flex(flex, center, flex-start);
     margin-bottom: 30px;
-    justify-content: center;
   }
 
   @include breakpoint(desktop) {
     margin-bottom: 50px;
   }
-}
 
-@include breakpoint(tablet) {
-  .portfolio-btn__item:nth-child(2) {
-    margin-left: 8px;
+  &__item:nth-child(2) {
+    @include breakpoint(tablet) {
+      margin-left: 8px;
+    }
+  }
+
+  &__top {
+    display: flex;
+
+    gap: 8px;
+
+    @include breakpoint(mobile-max) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+
+    gap: 8px;
+  }
+
+  &__btn {
+    @extend %btn;
+    padding: 6px 22px;
+
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    color: getColor('primary-title-color');
+    background-color: getColor('secondary-bgc');
+
+    transition: color $transition-duration $timing-function,
+      background-color $transition-duration $timing-function,
+      box-shadow $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      color: getColor('primary-bgc');
+      background-color: getColor('accent-color');
+
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
   }
 }
 
-.portfolio-btn-top {
-  display: flex;
-
-  gap: 8px;
-
-  @include breakpoint(mobile-max) {
-    margin-bottom: 15px;
-  }
-}
-
-.portfolio-btn-bottom {
-  display: flex;
-
-  gap: 8px;
-}
-
-.portfolio-btn__btn {
-  @extend %btn;
-  padding: 6px 22px;
-
-  font-weight: 500;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
-  color: $primary-title-color;
-  background-color: $secondary-bgc;
-
-  transition: color $transition-duration $timing-function,
-    background-color $transition-duration $timing-function,
-    box-shadow $transition-duration $timing-function;
-
-  &:hover,
-  &:focus {
-    color: $primary-bgc;
-    background-color: $accent-color;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
-}
-
-@include breakpoint(tablet) {
-  .example {
+.example {
+  @include breakpoint(tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: $indent;
   }
 
-  .example__item {
-    $items: 2;
-    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-  }
-}
-
-@include breakpoint(desktop) {
-  .example__item {
-    $items: 3;
-    flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-  }
-}
-
-@include breakpoint(mobile-max) {
-  .example__item:not(:last-child) {
-    margin-bottom: $indent;
-  }
-}
-
-.example__link {
-  display: block;
-
-  transition: box-shadow $transition-duration $timing-function;
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-}
-
-.example-wrapper {
-  position: relative;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.example__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  padding: 77px 24px;
-
-  width: 100%;
-  height: 100%;
-
-  font-size: 18px;
-  line-height: 1.56;
-
-  color: $primary-bgc;
-  background-color: $portfolio-overlay-bgc;
-
-  transform: translateY(101%);
-
-  transition: transform $transition-duration $timing-function;
-
-  @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
-    padding: 49px 24px 77px 24px;
-  }
-  @include breakpoint(desktop) {
-    padding: 63px 24px;
+  &__item {
+    @include breakpoint(tablet) {
+      $items: 2;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
   }
 
-  .example__link:hover &,
-  .example__link:focus & {
-    transform: translateY(0);
+  &__item {
+    @include breakpoint(desktop) {
+      $items: 3;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
+
+    &:not(:last-child) {
+      @include breakpoint(mobile-max) {
+        margin-bottom: $indent;
+      }
+    }
   }
-}
 
-.example__thumb {
-  padding: 20px 24px;
-  border: 1px solid $project-border-color;
-  border-top: none;
-}
+  &__link {
+    display: block;
 
-@media screen and (min-width: $tablet) and (max-width: 1199.99px) {
-  .example__thumb.example__thumb--big {
-    padding: 20px 24px 56px 24px;
+    transition: box-shadow $transition-duration $timing-function;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
   }
-}
 
-.example__title {
-  margin-bottom: 4px;
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+  }
 
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  color: $primary-title-color;
-}
+    padding: 77px 24px;
 
-.example__description {
-  font-size: 16px;
-  line-height: 1.88;
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    line-height: 1.56;
+
+    color: getColor('primary-bgc');
+    background-color: getColor('portfolio-overlay-bgc');
+
+    transform: translateY(101%);
+
+    transition: transform $transition-duration $timing-function;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+      padding: 49px 24px 77px 24px;
+    }
+    @include breakpoint(desktop) {
+      padding: 63px 24px;
+    }
+
+    .example__link:hover &,
+    .example__link:focus & {
+      transform: translateY(0);
+    }
+  }
+
+  &__thumb {
+    padding: 20px 24px;
+    border: 1px solid getColor('project-border-color');
+    border-top: none;
+
+    &.example__thumb--big {
+      @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+        padding: 20px 24px 56px 24px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 4px;
+
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+
+    color: getColor('primary-title-color');
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.88;
+  }
 }

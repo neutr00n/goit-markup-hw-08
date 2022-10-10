@@ -1,245 +1,3 @@
-/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-/*
-Document
-========
-*/
-/**
-Use a better box model (opinionated).
-*/
-*,
-::before,
-::after {
-  box-sizing: border-box;
-}
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-3. Use a more readable tab size (opinionated).
-*/
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-  -moz-tab-size: 4; /* 3 */
-  -o-tab-size: 4;
-     tab-size: 4; /* 3 */
-}
-
-/*
-Sections
-========
-*/
-/**
-1. Remove the margin in all browsers.
-2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-body {
-  margin: 0; /* 1 */
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; /* 2 */
-}
-
-/*
-Grouping content
-================
-*/
-/**
-1. Add the correct height in Firefox.
-2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
-*/
-hr {
-  height: 0; /* 1 */
-  color: inherit; /* 2 */
-}
-
-/*
-Text-level semantics
-====================
-*/
-/**
-Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-abbr[title] {
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-}
-
-/**
-Add the correct font weight in Edge and Safari.
-*/
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
-*/
-code,
-kbd,
-samp,
-pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
-Add the correct font size in all browsers.
-*/
-small {
-  font-size: 80%;
-}
-
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
-*/
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/*
-Tabular data
-============
-*/
-/**
-1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
-2. Correct table border color inheritance in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
-*/
-table {
-  text-indent: 0; /* 1 */
-  border-color: inherit; /* 2 */
-}
-
-/*
-Forms
-=====
-*/
-/**
-1. Change the font styles in all browsers.
-2. Remove the margin in Firefox and Safari.
-*/
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
-Remove the inheritance of text transform in Edge and Firefox.
-*/
-button,
-select {
-  text-transform: none;
-}
-
-/**
-Correct the inability to style clickable types in iOS and Safari.
-*/
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
-Remove the inner border and padding in Firefox.
-*/
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
-*/
-:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
-*/
-:-moz-ui-invalid {
-  box-shadow: none;
-}
-
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-legend {
-  padding: 0;
-}
-
-/**
-Add the correct vertical alignment in Chrome and Firefox.
-*/
-progress {
-  vertical-align: baseline;
-}
-
-/**
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
-1. Correct the odd appearance in Chrome and Safari.
-2. Correct the outline style in Safari.
-*/
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
-*/
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/*
-Interactive
-===========
-*/
-/*
-Add the correct display in Chrome and Safari.
-*/
-summary {
-  display: list-item;
-}
-
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
@@ -271,7 +29,7 @@ body {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  color: #212121;
+  color: #757575;
 }
 @media screen and (min-width: 1200px) {
   .title {
@@ -303,7 +61,7 @@ body {
   cursor: pointer;
 }
 
-.mobile-menu__btn--close, .mobile-menu__btn {
+.mobile-menu__btn-close, .mobile-menu__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -370,41 +128,14 @@ svg {
 }
 .header .container {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
-
 .header__logo {
   color: #2196f3;
 }
 .header__logo--black {
   color: #212121;
-}
-
-.mobile-menu__btn {
-  margin-left: auto;
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu__btn {
-    display: none;
-  }
-}
-.mobile-menu__btn--close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-}
-@media screen and (min-width: 768px) {
-  .mobile-menu__btn--close {
-    display: none;
-  }
-}
-
-.mobile-menu__icon--close {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.mobile-menu__btn--close:hover .mobile-menu__icon--close,
-.mobile-menu__icon--close .mobile-menu__btn--close:focus {
-  fill: #2196f3;
 }
 
 .mobile-menu {
@@ -429,8 +160,9 @@ svg {
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: flex;
-    margin-left: 87px;
+    justify-content: flex-start;
     align-items: center;
+    margin-left: 87px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -438,11 +170,38 @@ svg {
     margin-left: 92px;
   }
 }
-
 .mobile-menu.is-open {
   transform: translateX(0);
   pointer-events: initial;
   visibility: visible;
+}
+.mobile-menu__btn {
+  margin-left: auto;
+}
+.mobile-menu__btn:hover, .mobile-menu__btn:focus {
+  color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn {
+    display: none;
+  }
+}
+.mobile-menu__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu__btn-close {
+    display: none;
+  }
+}
+.mobile-menu__icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__btn-close:hover .mobile-menu__icon-close,
+.mobile-menu__icon-close .mobile-menu__btn-close:focus {
+  fill: #2196f3;
 }
 
 @media screen and (max-width: 767.99px) {
@@ -451,17 +210,17 @@ svg {
   }
 }
 @media screen and (min-width: 768px) {
-  .nav {
+  .site-nav__list {
     display: flex;
     gap: 50px;
   }
 }
 @media screen and (max-width: 767.99px) {
-  .nav__item:not(:last-child) {
+  .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
-.nav__link {
+.site-nav__link {
   font-weight: 500;
   font-size: 40px;
   line-height: 1.18;
@@ -469,11 +228,11 @@ svg {
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav__link:hover, .nav__link:focus {
+.site-nav__link:hover, .site-nav__link:focus {
   color: #2196f3;
 }
 @media screen and (min-width: 768px) {
-  .nav__link {
+  .site-nav__link {
     display: block;
     padding: 32px 0;
     font-size: 14px;
@@ -493,46 +252,44 @@ svg {
     left: 0;
     width: 100%;
     height: 4px;
-    background: #2196f3;
+    background-color: #2196f3;
     border-radius: 2px;
   }
 }
 
 @media screen and (max-width: 767.99px) {
-  .contact {
+  .contacts {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 64px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contact {
+  .contacts {
     margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact {
+  .contacts {
     display: flex;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-  .contact__item:first-child {
+  .contacts__item:first-child {
     margin-bottom: 10px;
   }
 }
 @media screen and (max-width: 767.99px) {
-  .contact__item:nth-child(2) {
+  .contacts__item:nth-child(2) {
     margin-bottom: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__item:nth-child(2) {
+  .contacts__item:nth-child(2) {
     margin-left: 30px;
   }
 }
-
-.contact__link {
+.contacts__link {
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
@@ -540,15 +297,16 @@ svg {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767.99px) {
-  .contact__link--size {
+  .contacts__link--size {
     font-size: 24px;
     line-height: 1.17;
     color: #757575;
   }
 }
 @media screen and (min-width: 768px) {
-  .contact__link {
+  .contacts__link {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     font-weight: 500;
     font-size: 12px;
@@ -557,32 +315,48 @@ svg {
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact__link {
+  .contacts__link {
     padding: 32px 0;
     font-size: 14px;
     line-height: 1.14;
   }
 }
-.contact__link:hover, .contact__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
-
-.contact__icon-teblet {
+.contacts__icon-mail {
   display: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
-  .contact__icon-teblet {
+@media screen and (min-width: 768px) {
+  .contacts__icon-mail {
     display: block;
     margin-right: 8px;
+    width: 14px;
+    height: 10px;
   }
 }
-
-.contact__icon {
-  margin-right: 10px;
+@media screen and (min-width: 1200px) {
+  .contacts__icon-mail {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
 }
-@media screen and (max-width: 1199.99px) {
-  .contact__icon {
-    display: none;
+.contacts__icon-phone {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon-phone {
+    display: block;
+    margin-right: 8px;
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icon-phone {
+    margin-right: 10px;
+    height: 16px;
   }
 }
 
@@ -594,16 +368,13 @@ svg {
     display: flex;
   }
 }
-
 .header-social__item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-
 .header-social__item:not(:first-child) {
   padding-left: 10px;
 }
-
 .header-social__link {
   font-weight: 500;
   font-size: 18px;
@@ -618,7 +389,7 @@ svg {
   max-width: 576px;
   height: 100%;
   text-align: center;
-  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -626,53 +397,32 @@ svg {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 960px;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600@2x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-color: #c4c4c4;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-1600@2x.jpg);
   }
 }
-
 .hero__title {
   margin: 0 auto;
   margin-bottom: 30px;
@@ -692,14 +442,13 @@ svg {
     line-height: 1.36;
   }
 }
-
 .hero__btn {
   padding: 10px 24px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
+  background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -721,11 +470,6 @@ svg {
   }
 }
 
-@media screen and (max-width: 767.99px) {
-  .features__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .features {
     display: flex;
@@ -741,7 +485,11 @@ svg {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-
+@media screen and (max-width: 767.99px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
 .features__thumb {
   display: flex;
   justify-content: center;
@@ -749,10 +497,9 @@ svg {
   margin-bottom: 30px;
   width: 100%;
   height: 120px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   border-radius: 4px;
 }
-
 .features__subtitle {
   margin-bottom: 10px;
   font-size: 14px;
@@ -765,36 +512,31 @@ svg {
     text-align: center;
   }
 }
-
 .features__description {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.our-work {
+.our-works {
   padding: 47px 0 94px 0;
 }
 @media screen and (max-width: 1199.99px) {
-  .our-work {
+  .our-works {
     display: none;
   }
 }
-
-.our-work__title {
+.our-works__title {
   margin-bottom: 50px;
 }
-
-.our-works {
+.our-works__list {
   display: flex;
   gap: 30px;
 }
-
 .our-works__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
   z-index: -1;
 }
-
 .our-works__subtitle {
   position: absolute;
   bottom: 0;
@@ -820,7 +562,6 @@ svg {
     padding: 94px 0;
   }
 }
-
 .our-team__title {
   margin-bottom: 30px;
 }
@@ -829,75 +570,52 @@ svg {
     margin-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 768px) {
-  .team {
+  .our-team__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
 }
-.team__item {
+.our-team__list__item {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (min-width: 768px) {
-  .team__item {
+  .our-team__list__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .team__item {
+  .our-team__list__item {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-
 @media screen and (max-width: 767.99px) {
-  .team__item:not(:last-child) {
+  .our-team__list__item:not(:last-child) {
     display: block;
     margin-bottom: 30px;
   }
 }
-@media screen and (min-width: 768px) {
-  .team__mobile-container {
-    display: none;
-  }
-}
-.team__tablet-container {
-  display: none;
-}
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
-  .team__tablet-container {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 1199.99px) {
-  .team__desktop-container {
-    display: none;
-  }
-}
-.team__thumb {
+.our-team__thumb {
   padding: 30px 0 24px 0;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
-  .team__thumb {
+  .our-team__thumb {
     padding: 30px 0;
   }
 }
-
-.team__name {
+.our-team__name {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   color: #212121;
 }
-
-.team__position {
+.our-team__position {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
@@ -906,9 +624,9 @@ svg {
 .team-socials {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 10px;
 }
-
 .team-socials__link {
   display: flex;
   justify-content: center;
@@ -921,7 +639,6 @@ svg {
 .team-socials__link:hover, .team-socials__link:focus {
   background-color: #2196f3;
 }
-
 .team-socials__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -938,7 +655,6 @@ svg {
     padding: 94px 0;
   }
 }
-
 .our-clients__title {
   margin-bottom: 30px;
 }
@@ -947,28 +663,25 @@ svg {
     margin-bottom: 50px;
   }
 }
-
-.clients {
+.our-clients__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-
-.clients__item {
+.our-clients__item {
   flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
-  .clients__item {
+  .our-clients__item {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
-  .clients__item {
+  .our-clients__item {
     flex-basis: calc((100% - 150px) / 6);
   }
 }
-
-.clients__link {
+.our-clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -977,15 +690,14 @@ svg {
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover, .clients__link:focus {
+.our-clients__link:hover, .our-clients__link:focus {
   border-color: #2196f3;
 }
-
-.clients__icon {
+.our-clients__icon {
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients__link:hover .clients__icon, .clients__link:focus .clients__icon {
+.our-clients__link:hover .our-clients__icon, .our-clients__link:focus .our-clients__icon {
   fill: #2196f3;
 }
 
@@ -1001,12 +713,11 @@ svg {
 @media screen and (min-width: 768px) {
   .footer .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 }
-
 .footer__wrapper:nth-child(1) {
   min-width: 231px;
 }
@@ -1016,7 +727,6 @@ svg {
     min-width: 232px;
   }
 }
-
 .footer__logo {
   display: block;
   margin-bottom: 20px;
@@ -1065,7 +775,7 @@ svg {
   }
 }
 
-.footer-join {
+.footer__join {
   display: block;
   margin-bottom: 20px;
   font-size: 14px;
@@ -1077,9 +787,9 @@ svg {
 .footer-socials {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   gap: 10px;
 }
-
 .footer-socials__link {
   display: flex;
   justify-content: center;
@@ -1093,7 +803,6 @@ svg {
 .footer-socials__link:hover, .footer-socials__link:focus {
   background-color: #2196f3;
 }
-
 .footer-socials__icon {
   fill: #ffffff;
 }
@@ -1163,7 +872,6 @@ svg {
 .send-form__input:focus {
   border-color: #ffffff;
 }
-
 .send-form__btn {
   padding: 10px 28px 10px 31px;
   min-width: 200px;
@@ -1185,7 +893,6 @@ svg {
 .send-form__btn:hover, .send-form__btn:focus {
   background-color: #188ce8;
 }
-
 .send-form__icon {
   margin-left: 12px;
 }
@@ -1210,8 +917,9 @@ svg {
 @media screen and (min-width: 768px) {
   .portfolio-btn {
     display: flex;
-    margin-bottom: 30px;
     justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1219,27 +927,24 @@ svg {
     margin-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .portfolio-btn__item:nth-child(2) {
     margin-left: 8px;
   }
 }
-.portfolio-btn-top {
+.portfolio-btn__top {
   display: flex;
   gap: 8px;
 }
 @media screen and (max-width: 767.99px) {
-  .portfolio-btn-top {
+  .portfolio-btn__top {
     margin-bottom: 15px;
   }
 }
-
-.portfolio-btn-bottom {
+.portfolio-btn__bottom {
   display: flex;
   gap: 8px;
 }
-
 .portfolio-btn__btn {
   padding: 6px 22px;
   font-weight: 500;
@@ -1261,6 +966,8 @@ svg {
     flex-wrap: wrap;
     gap: 30px;
   }
+}
+@media screen and (min-width: 768px) {
   .example__item {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -1282,13 +989,11 @@ svg {
 .example__link:hover, .example__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.example-wrapper {
+.example__wrapper {
   position: relative;
   overflow: hidden;
   z-index: -1;
 }
-
 .example__overlay {
   position: absolute;
   top: 0;
@@ -1316,13 +1021,11 @@ svg {
 .example__link:hover .example__overlay, .example__link:focus .example__overlay {
   transform: translateY(0);
 }
-
 .example__thumb {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
-
 @media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .example__thumb.example__thumb--big {
     padding: 20px 24px 56px 24px;
@@ -1335,7 +1038,6 @@ svg {
   letter-spacing: 0.06em;
   color: #212121;
 }
-
 .example__description {
   font-size: 16px;
   line-height: 1.88;
@@ -1371,16 +1073,15 @@ svg {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.2);
-}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
     height: 581px;
   }
 }
-
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(1.2);
+}
 .modal__close-btn {
   display: flex;
   justify-content: center;
@@ -1395,14 +1096,12 @@ svg {
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
-
 .modal__icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close-btn:hover .modal__icon, .modal__close-btn:focus .modal__icon {
   fill: #2196f3;
 }
-
 .modal__titel {
   display: block;
   margin-bottom: 12px;
@@ -1426,6 +1125,7 @@ svg {
 }
 .form__field:nth-child(5) {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
 }
@@ -1434,7 +1134,6 @@ svg {
     padding-left: 12px;
   }
 }
-
 .form__label {
   display: block;
   margin-bottom: 4px;
@@ -1442,11 +1141,9 @@ svg {
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
-
 .form__thumb {
   position: relative;
 }
-
 .form__input {
   padding: 12px 12px 12px 42px;
   width: 100%;
@@ -1459,7 +1156,6 @@ svg {
 .form__input:focus {
   border-color: #2196f3;
 }
-
 .form__icon {
   position: absolute;
   top: 50%;
@@ -1471,7 +1167,6 @@ svg {
 .form__input:focus + .form__icon {
   fill: #2196f3;
 }
-
 .form__comment {
   padding: 12px 16px;
   width: 100%;
@@ -1517,7 +1212,6 @@ svg {
     line-height: 1.17;
   }
 }
-
 .form__checkbox {
   position: absolute;
   white-space: nowrap;
@@ -1531,7 +1225,6 @@ svg {
           clip-path: inset(50%);
   margin: -1px;
 }
-
 .form__dissabled-icon {
   position: relative;
   margin-right: 8px;
@@ -1548,7 +1241,6 @@ svg {
   border-color: #2196f3;
   background-color: #2196f3;
 }
-
 .form__activ-icon {
   display: none;
   position: absolute;
@@ -1558,7 +1250,6 @@ svg {
 .form__checkbox:checked + .form__dissabled-icon .form__activ-icon {
   display: block;
 }
-
 .form__agreement {
   font-size: 12px;
   line-height: 1.17;
@@ -1569,13 +1260,11 @@ svg {
     line-height: 1.71;
   }
 }
-
 .form__link {
   color: #2196f3;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
-
 .form__btn {
   display: flex;
   margin: 0 auto;

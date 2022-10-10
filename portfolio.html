@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
+  <title>Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -24,39 +27,35 @@
         </svg>
       </button>
       <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <button type="button" class="mobile-menu__btn--close js-close-menu" aria-expanded="false"
+        <button type="button" class="mobile-menu__btn-close js-close-menu" aria-expanded="false"
           aria-controls="mobile-menu">
-          <svg class="mobile-menu__icon--close" aria-label="Перемикач мобільного меню" width="19" height="19">
+          <svg class="mobile-menu__icon-close" aria-label="Перемикач мобільного меню" width="19" height="19">
             <use href="./images/symbol-defs.svg#x"></use>
           </svg>
         </button>
         <nav class="site-nav">
-          <ul class="nav list">
-            <li class="nav__item"><a href="./index.html" class="nav__link ">Студія</a></li>
-            <li class="nav__item"><a href="./portfolio.html" class="nav__link current">Портфоліо</a></li>
-            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item"><a href="./index.html" class="site-nav__link ">Студія</a></li>
+            <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link current">Портфоліо</a></li>
+            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact list">
-          <li class="contact__item">
-            <a href="mailto:info@devstudio.com" class="contact__link contact__link--size">
-              <svg class="contact__icon-teblet" width="14" height="10">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--size">
+              <svg class="contacts__icon-mail" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com</a>
+              info@devstudio.com
+            </a>
           </li>
-          <li class="contact__item">
-            <a href="tel:+380961111111" class="contact__link">
-              <svg class="contact__icon-teblet" width="10" height="14">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon-phone" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-smartphone"></use>
               </svg>
-              <svg class="contact__icon" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a>
+              +38 096 111 11 11
+            </a>
           </li>
         </ul>
         <ul class="header-social list">
@@ -76,16 +75,19 @@
         <h1 class="titel visually-hidden">Наш портфоліо</h1>
         <ul class="portfolio-btn list">
           <li class="portfolio-btn__item">
-            <ul class="portfolio-btn-top list">
-              <li class="portfolio-btn-top__item"><button class="portfolio-btn__btn">Усі</button></li>
-              <li class="portfolio-btn-top__item"><button class="portfolio-btn__btn">Веб-сайти</button></li>
-              <li class="portfolio-btn-top__item"><button class="portfolio-btn__btn">Додатки</button></li>
+            <ul class="portfolio-btn__top list">
+              <li class="portfolio-btn__top-item"><button class="portfolio-btn__btn" type="button">Усі</button></li>
+              <li class="portfolio-btn__top-item"><button class="portfolio-btn__btn" type="button">Веб-сайти</button>
+              </li>
+              <li class="portfolio-btn__top-item"><button class="portfolio-btn__btn" type="button">Додатки</button></li>
             </ul>
           </li>
           <li class="portfolio-btn__item ">
-            <ul class="portfolio-btn-bottom list">
-              <li class="portfolio-btn-bottom__item"><button class="portfolio-btn__btn">Дизайн</button></li>
-              <li class="portfolio-btn-bottom__item"><button class="portfolio-btn__btn">Маркетинг</button></li>
+            <ul class="portfolio-btn__bottom list">
+              <li class="portfolio-btn__bottom-item"><button class="portfolio-btn__btn" type="button">Дизайн</button>
+              </li>
+              <li class="portfolio-btn__bottom-item"><button class="portfolio-btn__btn" type="button">Маркетинг</button>
+              </li>
             </ul>
           </li>
         </ul>
@@ -93,18 +95,14 @@
         <ul class="example list">
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio1-354.jpg 354w, 
                  ./images/portfolio/portfolio1-370.jpg 370w,
                  ./images/portfolio/portfolio1-450.jpg 450w,
                  ./images/portfolio/portfolio1-708.jpg 708w,
                  ./images/portfolio/portfolio1-740.jpg 740w,
-                 ./images/portfolio/portfolio1-900.jpg 900w,
-                 ./images/portfolio/portfolio1-1062.jpg 1062w,
-                 ./images/portfolio/portfolio1-1350.jpg 1350w,
-                 ./images/portfolio/portfolio1-1416.jpg 1416w,
-                 ./images/portfolio/portfolio1-1800.jpg 1800w"
+                 ./images/portfolio/portfolio1-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio1-354.jpg" alt="Картки трьох працівників" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -119,18 +117,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio2-354.jpg 354w, 
                  ./images/portfolio/portfolio2-370.jpg 370w,
                  ./images/portfolio/portfolio2-450.jpg 450w,
                  ./images/portfolio/portfolio2-708.jpg 708w,
                  ./images/portfolio/portfolio2-740.jpg 740w,
-                 ./images/portfolio/portfolio2-900.jpg 900w,
-                 ./images/portfolio/portfolio2-1062.jpg 1062w,
-                 ./images/portfolio/portfolio2-1350.jpg 1350w,
-                 ./images/portfolio/portfolio2-1416.jpg 1416w,
-                 ./images/portfolio/portfolio2-1800.jpg 1800w"
+                 ./images/portfolio/portfolio2-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio2-354.jpg" alt="Два баксетболіста" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -145,18 +139,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio3-354.jpg 354w, 
                  ./images/portfolio/portfolio3-370.jpg 370w,
                  ./images/portfolio/portfolio3-450.jpg 450w,
                  ./images/portfolio/portfolio3-708.jpg 708w,
                  ./images/portfolio/portfolio3-740.jpg 740w,
-                 ./images/portfolio/portfolio3-900.jpg 900w,
-                 ./images/portfolio/portfolio3-1062.jpg 1062w,
-                 ./images/portfolio/portfolio3-1350.jpg 1350w,
-                 ./images/portfolio/portfolio3-1416.jpg 1416w,
-                 ./images/portfolio/portfolio3-1800.jpg 1800w"
+                 ./images/portfolio/portfolio3-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio3-354.jpg" alt="Риба-емблема з назвою ресторану"
                   class="example__img" />
@@ -172,18 +162,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio4-354.jpg 354w, 
                  ./images/portfolio/portfolio4-370.jpg 370w,
                  ./images/portfolio/portfolio4-450.jpg 450w,
                  ./images/portfolio/portfolio4-708.jpg 708w,
                  ./images/portfolio/portfolio4-740.jpg 740w,
-                 ./images/portfolio/portfolio4-900.jpg 900w,
-                 ./images/portfolio/portfolio4-1062.jpg 1062w,
-                 ./images/portfolio/portfolio4-1350.jpg 1350w,
-                 ./images/portfolio/portfolio4-1416.jpg 1416w,
-                 ./images/portfolio/portfolio4-1800.jpg 1800w"
+                 ./images/portfolio/portfolio4-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio4-354.jpg" alt="Повнорозмірні навушники" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -198,18 +184,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio5-354.jpg 354w, 
                  ./images/portfolio/portfolio5-370.jpg 370w,
                  ./images/portfolio/portfolio5-450.jpg 450w,
                  ./images/portfolio/portfolio5-708.jpg 708w,
                  ./images/portfolio/portfolio5-740.jpg 740w,
-                 ./images/portfolio/portfolio5-900.jpg 900w,
-                 ./images/portfolio/portfolio5-1062.jpg 1062w,
-                 ./images/portfolio/portfolio5-1350.jpg 1350w,
-                 ./images/portfolio/portfolio5-1416.jpg 1416w,
-                 ./images/portfolio/portfolio5-1800.jpg 1800w"
+                 ./images/portfolio/portfolio5-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio5-354.jpg" alt="Кілька коробок на поверхні" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -224,18 +206,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio6-354.jpg 354w, 
                  ./images/portfolio/portfolio6-370.jpg 370w,
                  ./images/portfolio/portfolio6-450.jpg 450w,
                  ./images/portfolio/portfolio6-708.jpg 708w,
                  ./images/portfolio/portfolio6-740.jpg 740w,
-                 ./images/portfolio/portfolio6-900.jpg 900w,
-                 ./images/portfolio/portfolio6-1062.jpg 1062w,
-                 ./images/portfolio/portfolio6-1350.jpg 1350w,
-                 ./images/portfolio/portfolio6-1416.jpg 1416w,
-                 ./images/portfolio/portfolio6-1800.jpg 1800w"
+                 ./images/portfolio/portfolio6-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio6-354.jpg" alt="Монітор з зображенням програми"
                   class="example__img" />
@@ -251,18 +229,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio7-354.jpg 354w, 
                  ./images/portfolio/portfolio7-370.jpg 370w,
                  ./images/portfolio/portfolio7-450.jpg 450w,
                  ./images/portfolio/portfolio7-708.jpg 708w,
                  ./images/portfolio/portfolio7-740.jpg 740w,
-                 ./images/portfolio/portfolio7-900.jpg 900w,
-                 ./images/portfolio/portfolio7-1062.jpg 1062w,
-                 ./images/portfolio/portfolio7-1350.jpg 1350w,
-                 ./images/portfolio/portfolio7-1416.jpg 1416w,
-                 ./images/portfolio/portfolio7-1800.jpg 1800w"
+                 ./images/portfolio/portfolio7-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio7-354.jpg" alt="Відкритий журнал" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -277,18 +251,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio8-354.jpg 354w, 
                  ./images/portfolio/portfolio8-370.jpg 370w,
                  ./images/portfolio/portfolio8-450.jpg 450w,
                  ./images/portfolio/portfolio8-708.jpg 708w,
                  ./images/portfolio/portfolio8-740.jpg 740w,
-                 ./images/portfolio/portfolio8-900.jpg 900w,
-                 ./images/portfolio/portfolio8-1062.jpg 1062w,
-                 ./images/portfolio/portfolio8-1350.jpg 1350w,
-                 ./images/portfolio/portfolio8-1416.jpg 1416w,
-                 ./images/portfolio/portfolio8-1800.jpg 1800w"
+                 ./images/portfolio/portfolio8-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio8-354.jpg" alt="Бірка з написом" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -303,18 +273,14 @@
           </li>
           <li class="example__item">
             <a href="" class="example__link">
-              <div class="example-wrapper">
+              <div class="example__wrapper">
                 <img srcset="
                  ./images/portfolio/portfolio9-354.jpg 354w, 
                  ./images/portfolio/portfolio9-370.jpg 370w,
                  ./images/portfolio/portfolio9-450.jpg 450w,
                  ./images/portfolio/portfolio9-708.jpg 708w,
                  ./images/portfolio/portfolio9-740.jpg 740w,
-                 ./images/portfolio/portfolio9-900.jpg 900w,
-                 ./images/portfolio/portfolio9-1062.jpg 1062w,
-                 ./images/portfolio/portfolio9-1350.jpg 1350w,
-                 ./images/portfolio/portfolio9-1416.jpg 1416w,
-                 ./images/portfolio/portfolio9-1800.jpg 1800w"
+                 ./images/portfolio/portfolio9-900.jpg 900w"
                   sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, 450px"
                   src="./images/portfolio/portfolio9-354.jpg" alt="Працює за ноутбуком" class="example__img" />
                 <p class="example__overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -352,7 +318,7 @@
         </address>
       </div>
       <div class="footer__wrapper">
-        <b class="footer-join">приєднуйтесь</b>
+        <b class="footer__join">приєднуйтесь</b>
         <ul class="footer-socials list">
           <li class="footer-socials__item">
             <a href="" class="footer-socials__link" target="_blank" aria-label="Instagram">

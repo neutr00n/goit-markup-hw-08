@@ -30,7 +30,7 @@
   }
 }
 
-@mixin center-Flex($display: flex, $justify-content: center, $align-items: center) {
+@mixin flex($display: flex, $justify-content: flex-start, $align-items: flex-start) {
   display: $display;
   justify-content: $justify-content;
   align-items: $align-items;
