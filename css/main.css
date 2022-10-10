@@ -29,7 +29,7 @@ body {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  color: #757575;
+  color: #212121;
 }
 @media screen and (min-width: 1200px) {
   .title {
@@ -577,24 +577,24 @@ svg {
     gap: 30px;
   }
 }
-.our-team__list__item {
+.our-team__item {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 @media screen and (min-width: 768px) {
-  .our-team__list__item {
+  .our-team__item {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
-  .our-team__list__item {
+  .our-team__item {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
 @media screen and (max-width: 767.99px) {
-  .our-team__list__item:not(:last-child) {
+  .our-team__item:not(:last-child) {
     display: block;
     margin-bottom: 30px;
   }

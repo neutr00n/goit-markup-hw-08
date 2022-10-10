@@ -21,31 +21,31 @@
       flex-wrap: wrap;
       gap: $indent;
     }
+  }
 
-    &__item {
-      width: 100%;
+  &__item {
+    width: 100%;
 
-      background-color: getColor('primary-bgc');
+    background-color: getColor('primary-bgc');
 
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 
-      @include breakpoint(tablet) {
-        $items: 2;
-        flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-      }
+    @include breakpoint(tablet) {
+      $items: 2;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
 
-      @include breakpoint(desktop) {
-        $items: 4;
-        flex-basis: calc((100% - $indent * ($items - 1)) / $items);
-      }
+    @include breakpoint(desktop) {
+      $items: 4;
+      flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+    }
 
-      &:not(:last-child) {
-        @include breakpoint(mobile-max) {
-          display: block;
-          margin-bottom: $indent;
-        }
+    &:not(:last-child) {
+      @include breakpoint(mobile-max) {
+        display: block;
+        margin-bottom: $indent;
       }
     }
   }
