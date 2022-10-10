@@ -28,7 +28,7 @@ body {
   line-height: 1.18;
   text-align: center;
 
-  color: getColor('primary-text-color');
+  color: getColor('primary-title-color');
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;
