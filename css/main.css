@@ -121,7 +121,7 @@ svg {
 .header {
   border-bottom: 1px solid #ececec;
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .header {
     padding: 10px 0;
   }
@@ -141,7 +141,7 @@ svg {
 .mobile-menu {
   width: 100%;
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .mobile-menu {
     padding: 48px 40px;
     position: fixed;
@@ -204,7 +204,7 @@ svg {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .site-nav {
     margin-bottom: 302px;
   }
@@ -215,7 +215,7 @@ svg {
     gap: 50px;
   }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .site-nav__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -257,7 +257,7 @@ svg {
   }
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .contacts {
     display: flex;
     flex-direction: column-reverse;
@@ -274,12 +274,12 @@ svg {
     display: flex;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .contacts__item:first-child {
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .contacts__item:nth-child(2) {
     margin-bottom: 32px;
   }
@@ -296,7 +296,7 @@ svg {
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .contacts__link--size {
     font-size: 24px;
     line-height: 1.17;
@@ -363,7 +363,7 @@ svg {
 .header-social {
   display: none;
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .header-social {
     display: flex;
   }
@@ -485,7 +485,7 @@ svg {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -520,7 +520,7 @@ svg {
 .our-works {
   padding: 47px 0 94px 0;
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .our-works {
     display: none;
   }
@@ -593,7 +593,7 @@ svg {
     flex-basis: calc((100% - 90px) / 4);
   }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .our-team__item:not(:last-child) {
     display: block;
     margin-bottom: 30px;
@@ -705,7 +705,7 @@ svg {
   padding: 60px 0;
   background-color: #2f303a;
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .footer .container {
     text-align: center;
   }
@@ -721,7 +721,7 @@ svg {
 .footer__wrapper:nth-child(1) {
   min-width: 231px;
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .footer__wrapper:nth-child(1) {
     margin-bottom: 60px;
     min-width: 232px;
@@ -759,7 +759,7 @@ svg {
   color: #2196f3;
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .footer__wrapper:nth-child(2) {
     margin-bottom: 60px;
   }
@@ -839,12 +839,12 @@ svg {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 1199.99px) {
+@media screen and (max-width: 1199.98px) {
   .send-form__input {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .send-form__input {
     min-width: 450px;
   }
@@ -936,7 +936,7 @@ svg {
   display: flex;
   gap: 8px;
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .portfolio-btn__top {
     margin-bottom: 15px;
   }
@@ -977,7 +977,7 @@ svg {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.98px) {
   .example__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1008,7 +1008,7 @@ svg {
   transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .example__overlay {
     padding: 49px 24px 77px 24px;
   }
@@ -1026,7 +1026,7 @@ svg {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-@media screen and (min-width: 768px) and (max-width: 1199.99px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .example__thumb.example__thumb--big {
     padding: 20px 24px 56px 24px;
   }

@@ -131,7 +131,7 @@
 
     transition: transform $transition-duration $timing-function;
 
-    @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+    @include breakpoint(tablet-only) {
       padding: 49px 24px 77px 24px;
     }
     @include breakpoint(desktop) {
@@ -150,7 +150,7 @@
     border-top: none;
 
     &.example__thumb--big {
-      @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+      @include breakpoint(tablet-only) {
         padding: 20px 24px 56px 24px;
       }
     }

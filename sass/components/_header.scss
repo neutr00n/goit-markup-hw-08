@@ -173,7 +173,7 @@
   }
 
   &__item:first-child {
-    @media screen and (min-width: $tablet) and (max-width: 1199.99px) {
+    @include breakpoint(tablet-only) {
       margin-bottom: 10px;
     }
   }
