@@ -28,7 +28,7 @@
 
   padding: 40px;
 
-  width: 450px;
+  width: 93.75vw;
   height: 609px;
 
   background-color: getColor('primary-bgc');
@@ -133,6 +133,27 @@
     outline: none;
 
     transition: border-color $transition-duration $timing-function;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+
+      @include breakpoint(desktop) {
+        font-size: 12px;
+        line-height: 1.17;
+      }
+    }
+
+    &:not(:placeholder-shown):required:valid {
+      border-color: green;
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: red;
+    }
 
     &:focus {
       border-color: getColor('accent-color');

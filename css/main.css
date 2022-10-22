@@ -1066,7 +1066,7 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 450px;
+  width: 93.75vw;
   height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1152,6 +1152,56 @@ svg {
   border-radius: 4px;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form__input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.form__input::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+@media screen and (min-width: 1200px) {
+  .form__input::-moz-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .form__input:-ms-input-placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+  .form__input::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+.form__input:not(:-moz-placeholder-shown):required:valid {
+  border-color: green;
+}
+.form__input:not(:-ms-input-placeholder):required:valid {
+  border-color: green;
+}
+.form__input:not(:placeholder-shown):required:valid {
+  border-color: green;
+}
+.form__input:not(:-moz-placeholder-shown):required:invalid {
+  border-color: red;
+}
+.form__input:not(:-ms-input-placeholder):required:invalid {
+  border-color: red;
+}
+.form__input:not(:placeholder-shown):required:invalid {
+  border-color: red;
 }
 .form__input:focus {
   border-color: #2196f3;

@@ -470,7 +470,8 @@
         <label class="form__field">
           <span class="form__label">Ім'я</span>
           <span class="form__thumb">
-            <input type="text" name="name" class="form__input">
+            <input type="text" name="name" class="form__input" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{3,20}"
+              placeholder="Петро Петрович" required>
             <svg class="form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#person"></use>
             </svg>
@@ -479,7 +480,8 @@
         <label class="form__field">
           <span class="form__label">Телефон</span>
           <span class="form__thumb">
-            <input type="tel" name="tel" class="form__input">
+            <input type="tel" name="tel" class="form__input" pattern="\+?[0-9\s\-\(\)]+" maxlength="13" minlength="13"
+              placeholder="+38(0_ _) _ _ _   _ _   _ _" required>
             <svg class="form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#phone"></use>
             </svg>
@@ -488,7 +490,7 @@
         <label class="form__field">
           <span class="form__label">Пошта</span>
           <span class="form__thumb">
-            <input type="email" name="email" class="form__input">
+            <input type="email" name="email" class="form__input" placeholder="example@gmail.com" required>
             <svg class="form__icon" width="18" height="18">
               <use href="./images/symbol-defs.svg#email"></use>
             </svg>
